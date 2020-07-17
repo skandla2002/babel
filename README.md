@@ -37,10 +37,13 @@ yarn add @babel/core @babel/preset-react @babel/preset-env @babel/plugin-transfo
  2. webpack 에서 babel-loader로 실행
 
  3. @babel/core를 직접 실행
+   - @babel/core 실행 파일 생성
+   - AST 구조체 만들어서 사용하기
 
  4. @babel/register로 실행
 
-### 2. AST 구조체 사용하기
+### 2. babel library 처리
+
 
 ## 기타 사항
 ### npx: 

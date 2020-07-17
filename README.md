@@ -24,7 +24,8 @@ babel은 javascript compiler.
 yarn add @babel/core @babel/preset-react @babel/preset-env @babel/plugin-transform-literals @babel/plugin-transform-arrow-functions @babel/plugin-proposal-class-properties
 
 ### 1. 기본 실행: 
-
+ - 실행 단계 : 파싱(parse) > 변환(transform) > 생성(generate)
+               AST 생성    >   AST 변환      > Code로 변환
 #### 실행 방법:
  1. @babel/cli 실행
  2. webpack에서 babel-loader로 실행
@@ -42,8 +43,20 @@ yarn add @babel/core @babel/preset-react @babel/preset-env @babel/plugin-transfo
 
  4. @babel/register로 실행
 
-### 2. babel library 처리
+### 2. Babel 설정 방법
+ 1. extends 속성으로 다른 설정 가져오기
 
+ 2. env 속성으로 환경별로 설정 하기
+
+ 3. overrides 속성으로 파일 설정 하기
+
+### 3. Babel 전체 설정, 지역 설정 파일
+
+### 4. babel library 처리
+
+ 1. polyfill
+ 2. presets:
+ 3. plugins: 
 
 ## 기타 사항
 ### npx: 

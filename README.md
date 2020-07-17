@@ -24,7 +24,22 @@ babel은 javascript compiler.
 yarn add @babel/core @babel/preset-react @babel/preset-env @babel/plugin-transform-literals @babel/plugin-transform-arrow-functions @babel/plugin-proposal-class-properties
 
 ### 1. 기본 실행: 
-npx babel ./src/code.js --out-file dist/code.bundle.js
+
+#### 실행 방법:
+ 1. @babel/cli 실행
+ 2. webpack에서 babel-loader로 실행
+ 3. @babel/core를 직접 실행
+ 4. @babel/register 로 실행
+
+#### 실행 명령어
+ 1. @babel/cli 실행
+   npx babel ./src/code.js --out-file dist/code.bundle.js
+ 2. webpack 에서 babel-loader로 실행
+
+ 3. @babel/core를 직접 실행
+
+ 4. @babel/register로 실행
+
 ### 2. AST 구조체 사용하기
 
 ## 기타 사항

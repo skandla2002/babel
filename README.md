@@ -26,6 +26,7 @@ yarn add @babel/core @babel/preset-react @babel/preset-env @babel/plugin-transfo
 ### 1. 기본 실행: 
  - 실행 단계 : 파싱(parse) > 변환(transform) > 생성(generate)
                AST 생성    >   AST 변환      > Code로 변환
+
 #### 실행 방법:
  1. @babel/cli 실행
  2. webpack에서 babel-loader로 실행
@@ -59,7 +60,10 @@ yarn add @babel/core @babel/preset-react @babel/preset-env @babel/plugin-transfo
  3. plugins: 
 
 ## 기타 사항
-### npx: 
+### npx: npm@5.2.0이후 존재하는 실행명령어
+      - 로컬의 library를 실행 할 수 있음
+      - create react app, yeoman 같은 1회성 라이브러리를 global 설치 하지 않고서도 사용할 수 있음(임시로 저장후 사용하고 삭제함)
+      - 다른버전의 node를 실행 가능함(ex. npx -p node-bin@6)
 ### @babel/plugin-proposal-class-properties: 
 ### commonjs 형식:
  nodejs에서 사용하는 형태로 require함수로 함수를 받아서, 

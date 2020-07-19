@@ -13,3 +13,8 @@ const { code } = babel.transformSync(source, {
 });
 
 console.log(code);
+fs.writeFile('./dist/code.bundle.js',
+            code,
+            function(){
+                console.log('success')
+            });
